@@ -1,3 +1,16 @@
+body {
+    background-color: #864eaf;
+    color: #f3aa5f;
+}
+
 p {
     text-align: center;
+}
+
+a {
+    color: #f3aa5f;
+}
+
+em strong {
+    color: #fbfa05;
 }
