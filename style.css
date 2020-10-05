@@ -2,15 +2,37 @@ body {
     background-color: #864eaf;
     color: #f3aa5f;
 }
+h1 {
+    text-align: center;
+    color: #fbfa05;
+}
+
+#banner {
+    width: 75%;
+    padding-left: 12%;
+}
 
 p {
     text-align: center;
+}
+
+#missao {
+    font-size: 20px;
 }
 
 a {
     color: #f3aa5f;
 }
 
+a:hover {
+    color: #fbfa05;
+}
+
 em strong {
     color: #fbfa05;
+}
+
+#conteudo {
+    padding-left: 12%;
+    padding-right: 12%;
 }
