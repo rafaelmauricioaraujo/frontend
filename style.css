@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
 body {
     background-color: #864eaf;
     color: #f3aa5f;
@@ -14,6 +18,8 @@ body {
 
 .titulo-principal {
     padding-left: 20px;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
 }
 
 p {
