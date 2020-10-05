@@ -2,14 +2,18 @@ body {
     background-color: #864eaf;
     color: #f3aa5f;
 }
-h1 {
+.titulo-centralizado {
     text-align: center;
     color: #fbfa05;
 }
 
 #banner {
-    width: 75%;
-    padding-left: 12%;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.titulo-principal {
+    padding-left: 20px;
 }
 
 p {
@@ -41,10 +45,6 @@ em strong {
     padding-left: 12%;
     padding-right: 12%;
     background: #6a4275;
-}
-
-h2 {
-    text-align: center;
 }
 
 ul {
