@@ -32,7 +32,28 @@ em strong {
     color: #fbfa05;
 }
 
-#conteudo {
+.principal {
     padding-left: 12%;
     padding-right: 12%;
+}
+
+.skills {
+    padding-left: 12%;
+    padding-right: 12%;
+    background: #6a4275;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.itens {
+    font-style: italic;
 }
