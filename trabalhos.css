@@ -28,6 +28,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #fbfa05;
+    text-decoration: underline;
+}
+
 .trabalhos {
     width: 940px;
     margin: 0 auto;
@@ -44,6 +49,18 @@ nav a {
     box-sizing: border-box;
     border: 2px solid #f3aa5f;
     border-radius: 10px;
+}
+
+.trabalhos li:hover {
+    border-color: #7b8fe2;
+}
+
+.trabalhos li:active {
+    border-color: #fbfa05;
+}
+
+.trabalhos li:hover h2 {
+    font-size: 35px;
 }
 
 .trabalhos h2 {
