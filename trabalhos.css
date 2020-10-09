@@ -77,3 +77,15 @@ nav a:hover {
     font-weight: bold;
     margin: 10px 0 0;
 }
+
+footer {
+    text-align: center;
+    background: url('./img/footer.png');
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px 0 0;  
+}
