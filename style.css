@@ -1,69 +1,91 @@
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+header {
+    background-color: #7b8fe2;
+    padding: 20px 0;
 }
-body {
-    background-color: #864eaf;
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
     color: #f3aa5f;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
-.titulo-centralizado {
-    text-align: center;
+
+nav a:hover {
     color: #fbfa05;
+    text-decoration: underline;
 }
 
-#banner {
-    width: 80%;
-    padding-left: 10%;
+.trabalhos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.titulo-principal {
-    padding-left: 20px;
-    font-family: 'Press Start 2P';
-    font-size: 20px;
-}
-
-p {
-    text-align: center;
-}
-
-#missao {
-    font-size: 20px;
-}
-
-a {
-    color: #f3aa5f;
-}
-
-a:hover {
-    color: #fbfa05;
-}
-
-em strong {
-    color: #fbfa05;
-}
-
-.principal {
-    padding-left: 12%;
-    padding-right: 12%;
-}
-
-.skills {
-    padding-left: 12%;
-    padding-right: 12%;
-    background: #6a4275;
-}
-
-ul {
+.trabalhos li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #f3aa5f;
+    border-radius: 10px;
 }
 
-.itens {
-    font-style: italic;
+.trabalhos li:hover {
+    border-color: #7b8fe2;
 }
 
-.img_skills {
-    padding-left: 120px;
+.trabalhos li:active {
+    border-color: #fbfa05;
+}
+
+.trabalhos li:hover h2 {
+    font-size: 35px;
+}
+
+.trabalhos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.trabalhos-desc {
+    font-size: 18px;
+}
+
+.trabalhos-local {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+footer {
+    text-align: center;
+    background: url('./img/footer.png');
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px 0 0;  
 }
