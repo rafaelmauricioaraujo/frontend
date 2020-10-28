@@ -224,8 +224,12 @@ td, th {
     vertical-align: top;
 }
 
+.item::before {
+    content: "⭐  ";
+}
+
 .item {
-    line-height: 1.5;
+    line-height: 2.5;
 }
 
 .item:first-child {
