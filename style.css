@@ -95,11 +95,6 @@ footer {
     margin-top: 20px 0 0;  
 }
 
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     margin: 40px 0;
 }
@@ -166,6 +161,16 @@ td, th {
     clear: left;
 }
 
+.main {
+    background: #7b8fe2;
+    padding: 3em 0;
+}
+
+.main-content {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .main p {
     margin: 0 0 1em;
 }
@@ -186,6 +191,12 @@ td, th {
 
 .map {
     padding: 3em 0;
+    background: linear-gradient(#7b8fe2, #868eb2);
+}
+
+.map-content {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .map p {
@@ -195,6 +206,7 @@ td, th {
 
 .skills {
     padding: 3em 0;
+    background: #868eb2;
 }
 
 .img_skills {
