@@ -209,8 +209,14 @@ td, th {
     background: #868eb2;
 }
 
-.img_skills {
-    padding-left: 120px;
+.skill-img {
+    padding-left: 60px;
+    opacity: 0.3;
+    transition: 400ms;
+}
+
+.skill-img:hover {
+    opacity: 1;
 }
 
 .skill-content {
