@@ -1,0 +1,17 @@
+/* New Home css styles*/
+header {
+    background-color: #7b8fe2;
+    padding: 20px 0;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.nav-box {
+    font-size: smaller;
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
