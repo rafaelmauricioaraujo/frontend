@@ -1,1 +1,5 @@
-console.log('Meu primeiro programa');
+justConsole();
+
+function justConsole() {
+    console.log('Just a console.log');
+}
