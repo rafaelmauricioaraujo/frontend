@@ -7,17 +7,17 @@ class Account {
     #balance = 0;
 
     withdrawing(amount) {
-        if (this.#balance >= amount){
+        if (this.#balance >= amount) {
             this.#balance -= amount
-        }else {
-            console.log('denied');
+            return amount;
+        } else {
+            return 'deined';
         }
     }
 
     deposit(amount) {
-        if (amount > 0){
-            this.#balance += amount;
-        }
+        if (amount <= 0) return
+        this.#balance += amount;
     }
 }
 
@@ -33,7 +33,13 @@ account.agency = 888;
 
 console.log(account);
 
-account.withdrawing(10000);
+let number = account.withdrawing(10000)
+console.log('withdrawing', number);
+
+number = account.withdrawing(10);
+console.log('withdrawing', number);
+
 account.deposit(999);
 
-console.log(account);
+number = account.withdrawing(10);
+console.log('withdrawing', number);
