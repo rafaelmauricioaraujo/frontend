@@ -1,5 +1,2 @@
-justConsole();
-
-function justConsole() {
-    console.log('Just a console.log');
-}
+let lista = ['um', 'dois', 'tres'.length, 'cinco'];
+console.log(lista);
