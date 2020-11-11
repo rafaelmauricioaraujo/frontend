@@ -12,18 +12,18 @@ client2.id = 456;
 const account1 = new Account();
 account1.agency = 222;
 account1.Client = client1;
-console.log('accoun1: ', account1);
 
 const account2 = new Account();
 account2.agency = 333;
 account2.Client = client2;
-console.log('accoun2: ', account2);
 
 console.log('transfer');
 
 account1.deposit(1000);
 
-account1.transfer(500, account2);
+let amount = 200;
+account1.transfer(amount, account2);
+console.log('account2:\n\n', account2);
+console.log('\n\namount: ', amount);
 
-console.log('accoun1: ', account1);
-console.log('accoun2: ', account2);
+
