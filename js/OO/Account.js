@@ -21,6 +21,5 @@ export class Account {
     transfer(amount, account){
         let transferAmount = this.withdrawing(amount);
         account.deposit(transferAmount);
-        amount = 20;
     }
 }
