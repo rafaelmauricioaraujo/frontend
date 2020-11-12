@@ -1,6 +1,6 @@
 export class Account {
     agency;
-    Client;
+    client;
     #password = 'qweasd';
     _balance = 0;
 

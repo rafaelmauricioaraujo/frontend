@@ -7,16 +7,15 @@ acc._balance = 1000;
 
 console.log('acc: ', acc);
 
-
 const acc2 = new Account();
 acc2.agency = 222;
 acc2._balance = 200;
 
 const cli2 = new Client();
-acc2.Client = cli2;
+acc2.client = cli2;
 
-acc2.Client.name = 'Rafael';
-acc2.Client.id = null;
+acc2.client.name = 'Rafael';
+acc2.client.id = null;
 
 console.log('acc2: ', acc2);
 
