@@ -1,29 +1,22 @@
 import { Client } from './Client.js';
 import { Account } from './Account.js';
 
-const client1 = new Client();
-client1.name = 'Rafael';
-client1.id = 123;
+const acc = new Account();
+acc.agency = 111;
+acc._balance = 1000;
 
-const client2 = new Client();
-client2.name = 'Teti';
-client2.id = 456;
+console.log('acc: ', acc);
 
-const account1 = new Account();
-account1.agency = 222;
-account1.Client = client1;
 
-const account2 = new Account();
-account2.agency = 333;
-account2.Client = client2;
+const acc2 = new Account();
+acc2.agency = 222;
+acc2._balance = 200;
 
-console.log('transfer');
+const cli2 = new Client();
+acc2.Client = cli2;
 
-account1.deposit(1000);
+acc2.Client.name = 'Rafael';
+acc2.Client.id = null;
 
-let amount = 200;
-account1.transfer(amount, account2);
-console.log('account2:\n\n', account2);
-console.log('\n\namount: ', amount);
-
+console.log('acc2: ', acc2);
 
