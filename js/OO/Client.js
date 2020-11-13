@@ -5,16 +5,13 @@ export class Client {
     get name() {
         return this._name;
     }
-
-    set name(newName) {
-        this._name = newName;
-    }
-
+        
     get id () {
         return this._id;
     }
-
-    set id(newId) {
-        this._id = newId;
+    
+    constructor(clientName, clientId) {
+        this._name = clientName;
+        this._id = clientId;
     }
 }

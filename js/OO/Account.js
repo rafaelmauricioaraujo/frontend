@@ -1,19 +1,34 @@
 import { Client } from './Client.js';
 export class Account {
-    agency;
+    _agency;
     _client;
-    #password = 'qweasd';
     _balance = 0;
+    #password = 'qweasd';
 
-
+    get client() {
+        return this._client;
+    }
+    
     set client(newClient) {
         if (newClient instanceof Client) {
             this._client = newClient;
         }
     }
-
-    get client() {
+    get agency() {
         return this._client;
+    }
+
+    set agency(agency) {
+        this._agency = agency;
+    }
+
+    get balance(){
+        return this._balance;
+    }
+
+    constructor(agency, client) {
+        this.agency = agency;
+        this.client = client;
     }
 
     withdrawing(amount) {
@@ -25,10 +40,6 @@ export class Account {
         }
     }
 
-    get balance(){
-        return this._balance;
-    }
-
     deposit(amount) {
         if (amount <= 0) return
         this._balance += amount;
@@ -38,4 +49,5 @@ export class Account {
         let transferAmount = this.withdrawing(amount);
         account.deposit(transferAmount);
     }
+
 }
