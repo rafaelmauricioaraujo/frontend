@@ -1,10 +1,10 @@
 import { Client } from './Client.js';
 export class Account {
-    static _count = 0;
-    _agency;
-    _client;
-    _balance = 0;
-    #password = 'qweasd';
+    constructor(balance, client, agency) {
+        this._balance = balance;
+        this._client = client;
+        this._agency = agency;
+    }
 
     get client() {
         return this._client;
@@ -25,12 +25,6 @@ export class Account {
 
     get balance(){
         return this._balance;
-    }
-
-    constructor(agency, client) {
-        this.agency = agency;
-        this.client = client;
-        Account._count ++;
     }
 
     withdrawing(amount) {

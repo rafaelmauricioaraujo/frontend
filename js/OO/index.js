@@ -1,11 +1,13 @@
 import { Client } from './Client.js';
-import { Account } from './Account.js';
-import { Saving } from './Saving.js';
+import { SavingAcc } from './SavingAcc.js';
+import { CurrentAcc } from './CurrentAcc.js';
 
-const client = new Client('Rafael', 111);
-const account = new Account(123, client);
+const client1 = new Client('Rafael', 111);
+const client2 = new Client('Araujo', 222);
 
-const saving = new Saving(1000, client, 123);
+const currentAcc = new CurrentAcc(client1, 111);
+const savingAcc = new SavingAcc(1000, client2, 222);
 
-console.log('saving: ', saving);
+console.log('\n currentAcc type: ', typeof currentAcc);
+console.log('\n savingsAcc type: ', typeof savingAcc);
 
