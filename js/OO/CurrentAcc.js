@@ -9,12 +9,6 @@ export class CurrentAcc extends Account {
 
     withdrawing(amount) {
         const tax = 1.1;
-        amount = amount * tax;
-        if (this._balance >= amount) {
-            this._balance -= amount
-            return amount;
-        } else {
-            return 'deined';
-        }
+        return this._withdraing(amount, tax);
     }
 }

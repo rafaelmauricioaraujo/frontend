@@ -28,12 +28,16 @@ export class Account {
     }
 
     withdrawing(amount) {
-        if (this._balance >= amount) {
-            this._balance -= amount
+        const tax = 1
+        return this._withdraing(amount, tax)
+    }
+
+    _withdraing(amount, tax) {
+        if (this._balance >= amount * tax) {
+            this._balance -= amount * tax;
             return amount;
-        } else {
-            return 'deined';
         }
+        return 0;
     }
 
     deposit(amount) {
