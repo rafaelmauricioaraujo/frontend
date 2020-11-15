@@ -1,15 +1,11 @@
 import { Client } from './Client.js';
 import { Account } from './Account.js';
+import { Saving } from './Saving.js';
 
-const client = new Client('Rafael', 222);
-const client2 = new Client('Mauricio', 333);
-const client3 = new Client('Araujo', 333);
-const client4 = new Client('Teti', 333);
+const client = new Client('Rafael', 111);
+const account = new Account(123, client);
 
-const acc = new Account(333, client);
-const acc2 = new Account(444, client2);
-const acc3 = new Account(444, client3);
-const acc4 = new Account(444, client4);
+const saving = new Saving(1000, client, 123);
 
-console.log('count: ', Account._count);
+console.log('saving: ', saving);
 
