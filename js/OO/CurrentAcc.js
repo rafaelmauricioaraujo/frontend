@@ -6,4 +6,15 @@ export class CurrentAcc extends Account {
         super(0, client, agency);
         CurrentAcc.#count ++;
     }
+
+    withdrawing(amount) {
+        const tax = 1.1;
+        amount = amount * tax;
+        if (this._balance >= amount) {
+            this._balance -= amount
+            return amount;
+        } else {
+            return 'deined';
+        }
+    }
 }
