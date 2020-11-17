@@ -1,6 +1,11 @@
 import { Client } from './Client.js';
 export class Account {
     constructor(balance, client, agency) {
+
+        if (this.constructor == Account) {
+            throw new Error('Account is a abstract class, do not create instances');
+        }
+
         this._balance = balance;
         this._client = client;
         this._agency = agency;
