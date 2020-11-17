@@ -32,9 +32,8 @@ export class Account {
         return this._balance;
     }
 
-    withdrawing(amount) {
-        const tax = 1
-        return this._withdraing(amount, tax)
+    withdrawing() {
+        throw new Error('withdrawing method not implemented');
     }
 
     _withdraing(amount, tax) {

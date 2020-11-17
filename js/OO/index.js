@@ -4,7 +4,8 @@ import { CurrentAcc } from './CurrentAcc.js';
 import { Account } from './Account.js';
 
 const client = new Client('Rafael', 222);
-const account = new Account(200, client, 222);
+const saving = new SavingAcc(1000, client, 222);
 
-console.log(account);
+saving.withdrawing(100);
+console.log(saving);
 
