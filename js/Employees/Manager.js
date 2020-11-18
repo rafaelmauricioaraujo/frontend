@@ -1,5 +1,6 @@
 import { Employee } from "./User";
 
+
 import { User } from './User.js';
 
 export class Manager extends User {
