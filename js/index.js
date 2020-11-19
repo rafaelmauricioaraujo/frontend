@@ -3,11 +3,11 @@ import { Client } from './Client.js';
 
 import { Manager } from './Employees/Manager.js';
 
-const manager = new Manager('Araujo', 5000, 111);
-manager.password(123);
+const client = new Client('Rafael', 123456);
+const acc = new CurrentAcc(client, 1232);
 
-console.log(manager);
+const manager = new Manager('Araujo', 10000, 456789);
 
-const client = new Client('Rafael', 222);
-const currentAcc = new CurrentAcc(client, 222);
-console.log(currentAcc);
+console.log('account: ', acc);
+console.log('manager: ', manager);
+

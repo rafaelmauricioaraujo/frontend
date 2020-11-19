@@ -1,14 +1,14 @@
-export class User {
+export class Employee {
     constructor(name, salary, sn) {
         this._name = name;
         this._salary = salary;
         this._sn = sn;
         this._bonus = 1;
-        this._password = null;
+        this._password;
     }
 
-    set password(password) {
-        this._password = password;
+    set password(pwd) {
+        this._password = pwd;
     }
 
     get password() {
