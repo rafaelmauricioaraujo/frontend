@@ -4,11 +4,13 @@ import { Director } from './Employee/Director.js';
 import { ByteBank } from './ByteBank.js';
 
 const manager = new Manager('Rafael', 1000, 123345);
-manager.password = '1233456';
+manager.password = '123';
 
 const director = new Director('Araujo', 50000, 678890);
-director.password = 'qwert';
+director.password = 'asd';
 
-const login = ByteBank.login(manager, '1233456');
+const client = new Client('Mauricio', 888);
+client.password = 'fgh';
 
-console.log('manager login: ', login);
+const login = ByteBank.login(client, 'fgh');
+console.log('login: ', login);

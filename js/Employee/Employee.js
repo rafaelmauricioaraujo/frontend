@@ -8,12 +8,11 @@ export class Employee {
         this._password;
     }
 
-    get password() {
-        return this._password;
-    }
-
     set password(password) {
         this._password = password;
     }
-
+    
+    authenticate(password) {
+        return this._password == password;
+    }
 }
