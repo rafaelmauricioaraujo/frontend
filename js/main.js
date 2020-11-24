@@ -13,4 +13,30 @@ const client = new Client('Mauricio', 888);
 client.password = 'fgh';
 
 const login = ByteBank.login(client, 'fgh');
-console.log('login: ', login);
+
+const GLOBALBOX = (function () {
+    console.log('less is more');
+
+    let box = {};
+
+    box.queue = [];
+
+    box.addItem = function(car) {
+        return box.queue.push(car);
+    }
+
+    box.getItem = function() {
+        return box.queue.join('-');
+    }
+
+    return {
+        add: box.addItem,
+        get: box.getItem
+    }
+})();
+
+GLOBALBOX.add('Gol');
+GLOBALBOX.add('Celta');
+GLOBALBOX.add('Onix');
+
+console.log(GLOBALBOX.get());
