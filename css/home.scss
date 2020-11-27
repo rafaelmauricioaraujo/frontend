@@ -1,14 +1,8 @@
 //varables
-$main-color: #6C3D92;
-$shadow-color: #FE31AA;
-$nav-color: #F8B163;
-$nav-color-hover: #fbfa05;
-$default-font: 'Press Start 2P', cursive;
+@import 'variables';
 
-
-//mixins
-
-html, body {
+html,
+body {
     margin: 0;
     height: 100%;
 }
@@ -39,7 +33,7 @@ nav {
     li {
         display: inline;
         margin: 0 0 0 15px;
-        }
+    }
 
     a {
         color: $nav-color;
@@ -54,10 +48,10 @@ nav {
         }
 
     }
-} 
+}
 
 .main-content {
-    margin: 20% auto; 
+    margin: 20% auto;
 }
 
 .main-title {
