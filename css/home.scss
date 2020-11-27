@@ -1,8 +1,12 @@
+//varables
 $main-color: #6C3D92;
 $shadow-color: #FE31AA;
 $nav-color: #F8B163;
 $nav-color-hover: #fbfa05;
 $default-font: 'Press Start 2P', cursive;
+
+
+//mixins
 
 html, body {
     margin: 0;
@@ -27,30 +31,30 @@ body {
 }
 
 nav {
+
     position: absolute;
-    /* top: 110px; */
     right: 0;
     margin-right: 100px;
 
-}
+    li {
+        display: inline;
+        margin: 0 0 0 15px;
+        }
 
-nav li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
+    a {
+        color: $nav-color;
+        text-transform: lowercase;
+        font-size: 22px;
+        text-decoration: none;
+        text-shadow: -4px 3px 1px $shadow-color;
 
-nav a {
-    color: $nav-color;
-    text-transform: lowercase;
-    font-size: 22px;
-    text-decoration: none;
-    text-shadow: -4px 3px 1px $shadow-color;
-}
+        &:hover {
+            color: $nav-color-hover;
+            text-decoration: underline;
+        }
 
-nav a:hover {
-    color: $nav-color-hover;
-    text-decoration: underline;
-}
+    }
+} 
 
 .main-content {
     margin: 20% auto; 
