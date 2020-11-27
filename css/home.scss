@@ -2,16 +2,21 @@ $main-color: #6C3D92;
 $shadow-color: #FE31AA;
 $nav-color: #F8B163;
 $nav-color-hover: #fbfa05;
+$default-font: 'Press Start 2P', cursive;
 
-/* New Home css styles*/
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 header {
-    background-color: $main-color
+    background-color: $main-color;
     padding: 20px 0;
 }
 
 body {
-    background-color: $main-color
-    font-family: 'Press Start 2P', cursive;
+    background-color: $main-color;
+    font-family: $default-font;
     font-size: small;
 }
 
@@ -25,6 +30,8 @@ nav {
     position: absolute;
     /* top: 110px; */
     right: 0;
+    margin-right: 100px;
+
 }
 
 nav li {
@@ -45,9 +52,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.main {
-    margin: 15% auto;
-    
+.main-content {
+    margin: 20% auto; 
 }
 
 .main-title {
@@ -60,5 +66,9 @@ nav a:hover {
 footer {
     text-align: center;
     font-size: smaller;
-    padding: 100px 0;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    color: $nav-color;
 }

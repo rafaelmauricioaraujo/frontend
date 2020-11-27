@@ -35,13 +35,6 @@ const GLOBALBOX = (function () {
     }
 })();
 
-GLOBALBOX.add('Gol');
-GLOBALBOX.add('Celta');
-GLOBALBOX.add('Onix');
-
-console.log(GLOBALBOX.get());
-
-
 function getCep() {
     let inputCEP = document.querySelector('.CEP');
     let cep = inputCEP.value.replace('-', '');
