@@ -1,0 +1,64 @@
+$main-color: #6C3D92;
+$shadow-color: #FE31AA;
+$nav-color: #F8B163;
+$nav-color-hover: #fbfa05;
+
+/* New Home css styles*/
+header {
+    background-color: $main-color
+    padding: 20px 0;
+}
+
+body {
+    background-color: $main-color
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.nav-box {
+    font-size: smaller;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    /* top: 110px; */
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    color: $nav-color;
+    text-transform: lowercase;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: -4px 3px 1px $shadow-color;
+}
+
+nav a:hover {
+    color: $nav-color-hover;
+    text-decoration: underline;
+}
+
+.main {
+    margin: 15% auto;
+    
+}
+
+.main-title {
+    text-align: center;
+    color: $nav-color-hover;
+    font-size: 3em;
+    text-shadow: -5px 3px 2px $shadow-color;
+}
+
+footer {
+    text-align: center;
+    font-size: smaller;
+    padding: 100px 0;
+}
