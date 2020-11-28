@@ -1,55 +1,6 @@
 //varables
 @import '../base/reset';
-@import '../helpers/variables';
-
-html,
-body {
-    margin: 0;
-    height: 100%;
-}
-
-header {
-    background-color: $main-color;
-    padding: 20px 0;
-}
-
-body {
-    background-color: $main-color;
-    font-family: $default-font;
-    font-size: small;
-}
-
-.nav-box {
-    font-size: smaller;
-    position: relative;
-    margin: 0 auto;
-}
-
-nav {
-
-    position: absolute;
-    right: 0;
-    margin-right: 100px;
-
-    li {
-        display: inline;
-        margin: 0 0 0 15px;
-    }
-
-    a {
-        color: $nav-color;
-        text-transform: lowercase;
-        font-size: 22px;
-        text-decoration: none;
-        text-shadow: -4px 3px 1px $shadow-color;
-
-        &:hover {
-            color: $nav-color-hover;
-            text-decoration: underline;
-        }
-
-    }
-}
+@import './default';
 
 .main-content {
     margin: 20% auto;
@@ -62,12 +13,4 @@ nav {
     text-shadow: -5px 3px 2px $shadow-color;
 }
 
-footer {
-    text-align: center;
-    font-size: smaller;
-    position: fixed;
-    left: 0;
-    bottom: 20px;
-    width: 100%;
-    color: $nav-color;
-}
+@import './footer.scss';

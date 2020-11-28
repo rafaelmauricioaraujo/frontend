@@ -1,0 +1,11 @@
+@import '../helpers/variables.scss';
+
+footer {
+    text-align: center;
+    font-size: smaller;
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    color: $nav-color;
+}

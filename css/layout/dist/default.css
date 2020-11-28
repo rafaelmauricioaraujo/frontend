@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  background-color: #371f4a;
+  padding: 20px 0;
+}
+
+body {
+  background-color: #371f4a;
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
+}
+
+.nav-box {
+  font-size: smaller;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  margin-right: 100px;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+nav a {
+  color: #F8B163;
+  text-transform: lowercase;
+  font-size: 22px;
+  text-decoration: none;
+  text-shadow: -4px 3px 1px #FE31AA;
+}
+nav a:hover {
+  color: #fbfa05;
+  text-decoration: underline;
+}
