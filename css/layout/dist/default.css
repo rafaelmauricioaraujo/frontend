@@ -5,12 +5,12 @@ body {
 }
 
 header {
-  background-color: #512e6e;
+  background-color: #6c3d92;
   padding: 20px 0;
 }
 
 body {
-  background-color: #512e6e;
+  background-color: #6c3d92;
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
@@ -35,7 +35,7 @@ nav a {
   text-transform: lowercase;
   font-size: 22px;
   text-decoration: none;
-  text-shadow: -4px 3px 1px #FE31AA;
+  text-shadow: -4px 3px 1px #fe31aa;
 }
 nav a:hover {
   color: #fbfa05;
