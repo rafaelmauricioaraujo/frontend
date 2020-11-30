@@ -59,12 +59,12 @@ body {
 }
 
 header {
-  background-color: #6C3D92;
+  background-color: #512e6e;
   padding: 20px 0;
 }
 
 body {
-  background-color: #6C3D92;
+  background-color: #512e6e;
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
@@ -116,5 +116,3 @@ footer {
   width: 100%;
   color: #F8B163;
 }
-
-/*# sourceMappingURL=home.css.map */
