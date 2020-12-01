@@ -14,17 +14,27 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
+@media (max-width: 940px) {
+  body {
+    font-size: xx-small;
+  }
+}
 
 .nav-box {
   font-size: smaller;
   position: relative;
   margin: 0 auto;
 }
+@media (max-width: 940px) {
+  .nav-box {
+    position: static;
+  }
+}
 
 nav {
   position: absolute;
   right: 0;
-  margin-right: 100px;
+  margin-right: 10%;
 }
 nav li {
   display: inline;
@@ -39,5 +49,5 @@ nav a {
 }
 nav a:hover {
   color: #fbfa05;
-  text-decoration: underline;
+  text-decoration: none;
 }

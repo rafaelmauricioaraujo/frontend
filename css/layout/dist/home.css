@@ -68,17 +68,27 @@ body {
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
+@media (max-width: 940px) {
+  body {
+    font-size: xx-small;
+  }
+}
 
 .nav-box {
   font-size: smaller;
   position: relative;
   margin: 0 auto;
 }
+@media (max-width: 940px) {
+  .nav-box {
+    position: static;
+  }
+}
 
 nav {
   position: absolute;
   right: 0;
-  margin-right: 100px;
+  margin-right: 10%;
 }
 nav li {
   display: inline;
@@ -93,7 +103,7 @@ nav a {
 }
 nav a:hover {
   color: #fbfa05;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .main-content {
@@ -105,6 +115,12 @@ nav a:hover {
   color: #fbfa05;
   font-size: 3em;
   text-shadow: -5px 3px 2px #fe31aa;
+}
+@media (max-width: 940px) {
+  .main-title {
+    font-size: 2em;
+    padding-top: 30%;
+  }
 }
 
 footer {

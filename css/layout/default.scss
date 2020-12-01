@@ -15,19 +15,25 @@ body {
     background-color: $main-color;
     font-family: $default-font;
     font-size: small;
+    @media(max-width: 940px) {
+        font-size: xx-small;
+    }
 }
 
 .nav-box {
     font-size: smaller;
     position: relative;
     margin: 0 auto;
+    @media(max-width: 940px) {
+        position: static;
+    }
 }
 
 nav {
 
     position: absolute;
     right: 0;
-    margin-right: 100px;
+    margin-right: 10%;
 
     li {
         display: inline;
@@ -43,7 +49,7 @@ nav {
 
         &:hover {
             color: $nav-color-hover;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
     }
