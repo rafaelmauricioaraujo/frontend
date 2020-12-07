@@ -11,26 +11,23 @@ header {
     padding: 20px 0;
 }
 
-body {
-    background-color: $main-color;
-    font-family: $default-font;
-    font-size: small;
-    @media(max-width: 940px) {
-        font-size: xx-small;
-    }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-box {
     font-size: smaller;
     position: relative;
     margin: 0 auto;
+
     @media(max-width: 940px) {
         position: static;
     }
 }
 
 nav {
-
     position: absolute;
     right: 0;
     margin-right: 10%;
@@ -52,5 +49,15 @@ nav {
             text-decoration: none;
         }
 
+    }
+}
+
+body {
+    background-color: $main-color;
+    font-family: $default-font;
+    font-size: small;
+
+    @media(max-width: 940px) {
+        font-size: xx-small;
     }
 }

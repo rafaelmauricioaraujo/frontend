@@ -2,6 +2,12 @@
 @import '../base/reset';
 @import './default';
 
+.logo {
+    @media(max-width: 940px) {
+        width: auto;
+    }
+}
+
 .main-content {
     margin: 20% auto;
 }
