@@ -1,5 +1,31 @@
 @import '../helpers/variables.scss';
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    a {
+        color: $nav-color;
+        text-transform: lowercase;
+        font-size: 16px;
+        text-decoration: none;
+        text-shadow: -4px 3px 1px $shadow-color;
+
+        &:hover {
+            color: $nav-color-hover;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.copyright {
+    padding-top: 2%;
+}
+
 footer {
     text-align: center;
     font-size: smaller;

@@ -1,3 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #F8B163;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: -4px 3px 1px #fe31aa;
+}
+ul a:hover {
+  color: #fbfa05;
+  text-decoration: none;
+}
+
+.copyright {
+  padding-top: 2%;
+}
+
 footer {
   text-align: center;
   font-size: smaller;
