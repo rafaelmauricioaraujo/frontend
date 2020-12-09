@@ -16,6 +16,11 @@ ul a:hover {
   text-decoration: none;
 }
 
+ul a img {
+  width: 12%;
+  height: 12%;
+}
+
 .copyright {
   padding-top: 2%;
   color: #4c2b67;
