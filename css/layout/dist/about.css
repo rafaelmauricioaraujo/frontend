@@ -67,6 +67,19 @@ header {
   display: flex;
   align-items: center;
 }
+@media (max-width: 940px) {
+  .principal {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 940px) {
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 
 .container footer {
   display: flex;
@@ -94,6 +107,12 @@ nav li {
   display: inline-block;
   margin: 0 0 0 15px;
 }
+@media (max-width: 940px) {
+  nav li {
+    margin: 0 0 0 20%;
+    padding: 4%;
+  }
+}
 nav a {
   color: #F8B163;
   text-transform: lowercase;
@@ -104,6 +123,12 @@ nav a {
 nav a:hover {
   color: #fbfa05;
   text-decoration: none;
+}
+@media (max-width: 940px) {
+  nav {
+    position: inherit;
+    margin-right: 0%;
+  }
 }
 
 body {
