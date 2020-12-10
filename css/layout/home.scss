@@ -10,6 +10,9 @@
 
 .main-content {
     margin: 20% auto;
+    @media(max-width: 940px) {
+        margin: 10% auto;
+    }
 }
 
 .main-title {
