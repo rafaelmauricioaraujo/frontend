@@ -14,6 +14,19 @@ header {
 .principal {
     display: flex;
     align-items: center;
+    
+    @media(max-width: 940px) {
+        flex-direction: column;
+    }
+}
+
+.list-menu {
+
+    @media(max-width: 940px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 .container footer {
@@ -40,6 +53,11 @@ nav {
     li {
         display: inline-block;
         margin: 0 0 0 15px;
+
+        @media(max-width: 940px) {
+            margin: 0 0 0 20%;
+            padding: 4%;
+        }
     }
 
     a {
@@ -54,6 +72,11 @@ nav {
             text-decoration: none;
         }
 
+    }
+
+    @media(max-width: 940px) {
+        position: inherit;
+        margin-right: 0%;
     }
 }
 
