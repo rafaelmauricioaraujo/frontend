@@ -1,4 +1,26 @@
 @import '../base/reset';
 @import './default';
 
+.main-content {
+    display: grid;
+    grid-template-areas: 
+        "actual"
+        "all"
+        "learning";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.actual {
+    grid-area: actual;
+}
+
+.all {
+    grid-area: actual;
+}
+
+.learning {
+    grid-area: learning;
+}
+
 @import './footer.scss';

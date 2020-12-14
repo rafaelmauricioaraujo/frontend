@@ -142,6 +142,25 @@ body {
   }
 }
 
+.main-content {
+  display: grid;
+  grid-template-areas: "actual" "all" "learning";
+  grid-template-columns: auto;
+  grid-template-rows: 50px auto auto;
+}
+
+.actual {
+  grid-area: actual;
+}
+
+.all {
+  grid-area: actual;
+}
+
+.learning {
+  grid-area: learning;
+}
+
 .footer {
   display: flex;
   align-items: center;
