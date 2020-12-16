@@ -23,15 +23,16 @@ ul a img {
 
 .copyright {
   padding-top: 2%;
+  padding-bottom: 2%;
   color: #4c2b67;
 }
 
 footer {
   text-align: center;
   font-size: smaller;
-  position: fixed;
+  position: absolute;
   left: 0;
-  bottom: 20px;
+  padding-top: 20%;
   width: 100%;
   color: #F8B163;
 }

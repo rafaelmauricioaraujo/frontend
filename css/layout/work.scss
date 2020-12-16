@@ -3,6 +3,7 @@
 
 .main-content {
     display: grid;
+    gap: .2rem;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 33.33% 33.33% 33.33%;
     height: calc(100vh - 80px);
@@ -19,14 +20,22 @@
     grid-row-end: 3;
 }
 
-.secondary {
-    background-image: url('../../../img/java.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
+.secondary:nth-child(2) {
+    background: url('../../../img/java.png') center / auto no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
 }
+
+.secondary:nth-child(3) {
+    background: url('../../../img/jslogo.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.secondary:nth-child(4) {
+    background: url('../../../img/pythonlogo.png') center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
 @import './footer.scss';
