@@ -144,21 +144,8 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-areas: "actual" "all" "learning";
-  grid-template-columns: auto;
-  grid-template-rows: 50px auto auto;
-}
-
-.actual {
-  grid-area: actual;
-}
-
-.all {
-  grid-area: all;
-}
-
-.learning {
-  grid-area: learning;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
 }
 
 .footer {

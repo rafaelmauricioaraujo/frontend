@@ -3,24 +3,20 @@
 
 .main-content {
     display: grid;
-    grid-template-areas: 
-        "actual"
-        "all"
-        "learning";
-    grid-template-columns: auto;
-    grid-template-rows: 50px auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
 }
 
-.actual {
-    grid-area: actual;
-}
+// .actual {
+//     grid-area: actual;
+// }
 
-.all {
-    grid-area: all;
-}
+// .all {
+//     grid-area: all;
+// }
 
-.learning {
-    grid-area: learning;
-}
+// .learning {
+//     grid-area: learning;
+// }
 
 @import './footer.scss';
