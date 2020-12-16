@@ -151,10 +151,10 @@ body {
 }
 
 .actual {
-  background-image: url("../../../img/blue-prism-logo.png");
+  background-image: url("../../../img/blue-prism-logo_roxo.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -162,19 +162,19 @@ body {
 }
 
 .secondary:nth-child(2) {
-  background: url("../../../img/java.png") center/auto no-repeat;
+  background: url("../../../img/java.png") center/contain no-repeat;
   grid-column: 4/4;
   grid-row: 1/1;
 }
 
 .secondary:nth-child(3) {
-  background: url("../../../img/jslogo.png") center/cover no-repeat;
+  background: url("../../../img/jslogo.png") center/contain no-repeat;
   grid-column: 4/4;
   grid-row: 2/2;
 }
 
 .secondary:nth-child(4) {
-  background: url("../../../img/pythonlogo.png") center/cover no-repeat;
+  background: url("../../../img/pythonlogo.png") center/contain no-repeat;
   grid-column: 4/4;
   grid-row: 3/3;
 }
