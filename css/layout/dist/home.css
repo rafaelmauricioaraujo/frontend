@@ -59,7 +59,7 @@ body {
 }
 
 header {
-  background-color: #6c3d92;
+  background-color: #6a3c8f;
   padding: 20px 0;
 }
 
@@ -132,7 +132,7 @@ nav a:hover {
 }
 
 body {
-  background-color: #6c3d92;
+  background-color: #6a3c8f;
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
@@ -170,6 +170,17 @@ body {
   }
 }
 
+.about-content {
+  padding-top: 2%;
+}
+
+.about-text {
+  color: #F8B163;
+  padding-top: 3%;
+  text-align: justify;
+  font-size: medium;
+}
+
 .footer {
   display: flex;
   align-items: center;
@@ -196,7 +207,7 @@ ul a img {
 .copyright {
   padding-top: 2%;
   padding-bottom: 2%;
-  color: #4c2b67;
+  color: #4a2a64;
 }
 
 footer {

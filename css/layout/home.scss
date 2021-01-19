@@ -26,4 +26,15 @@
     }
 }
 
+.about-content {
+    padding-top: 2%;
+}
+
+.about-text {
+    color: $nav-color;
+    padding-top: 3%;
+    text-align: justify;
+    font-size: medium;
+}
+
 @import './footer.scss';
