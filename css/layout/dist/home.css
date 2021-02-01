@@ -192,6 +192,12 @@ ul a img {
   width: 12%;
   height: 12%;
 }
+@media (max-width: 940px) {
+  ul a img {
+    width: 30%;
+    height: 30%;
+  }
+}
 
 .copyright {
   padding-top: 2%;
@@ -204,7 +210,7 @@ footer {
   font-size: smaller;
   position: absolute;
   left: 0;
-  padding-top: 20%;
   width: 100%;
   color: #F8B163;
+  bottom: 0;
 }
