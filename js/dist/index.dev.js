@@ -1,37 +1,21 @@
 "use strict";
 
-var text = ['Rafael', 'Developer', 'Dog lover', 'LOTR Fan', 'Cyber r space'];
+var text = ['rafael', 'developer', 'dog lover', 'lotr fan', 'cyberspace'];
 var speed = 120;
-var index;
 var sentence = document.getElementById('sentence');
-index = sentence.innerHTML.length;
+var index = sentence.innerHTML.length;
+var indice = 0;
 
 function typeWriter() {
-  console.log('inner in initial: ', sentence.innerHTML);
-  console.log('index: ', index);
-
   if (index !== 0) {
-    console.log('aqui');
-    sentence.innerHTML = sentence.innerHTML.substring(0, index - 1);
+    sentence.innerHTML = sentence.innerHTML.substring(0, index);
     index--;
-    console.log('index after: ', index);
-    console.log('sentence: ', sentence.innerHTML);
     setTimeout(typeWriter, speed);
-  }
-
-  if (sentence.innerHTML == '') {
-    if (index < text[0].length) {
-      console.log('agora aqui');
-      sentence.innerHTML += text[0].charAt(index);
-      index++;
-      console.log('index in typing: ', index);
+  } else {
+    if (indice < text[0].length) {
+      sentence.innerHTML += text[0].charAt(indice);
+      indice++;
       setTimeout(typeWriter, speed);
     }
   }
-} // function typing() {
-//     if (index < text[0].length) {
-//         sentence.innerHTML += text[0].charAt(index);
-//         index++;
-//         setTimeout(typeWriter, speed);
-//     }
-// }
+}
