@@ -1,21 +1,28 @@
 "use strict";
 
-var text = ['rafael', 'developer', 'dog lover', 'lotr fan', 'cyberspace'];
+var text = ['cyb', 'rafael', 'developer', 'dog lover', 'lotr fan'];
 var speed = 120;
 var sentence = document.getElementById('sentence');
-var index = sentence.innerHTML.length;
-var indice = 0;
+var writer = 0;
+var eraser = sentence.innerHTML.length;
+var item = 0;
 
 function typeWriter() {
-  if (index !== 0) {
-    sentence.innerHTML = sentence.innerHTML.substring(0, index);
-    index--;
+  if (writer == text[item].length) {
+    writer = 0;
+    item++;
+  }
+
+  if (writer < text[item].length) {
+    sentence.innerHTML += text[item].charAt(writer);
+    writer++;
+    eraser = sentence.innerHTML.length;
     setTimeout(typeWriter, speed);
-  } else {
-    if (indice < text[0].length) {
-      sentence.innerHTML += text[0].charAt(indice);
-      indice++;
-      setTimeout(typeWriter, speed);
-    }
+  }
+
+  if (eraser == text[item].length) {
+    sentence.innerHTML = sentence.innerHTML.substring(0, eraser - 1);
+    eraser--;
+    setTimeout(typeWriter, speed);
   }
 }

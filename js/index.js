@@ -1,20 +1,29 @@
-const text = ['rafael', 'developer', 'dog lover', 'lotr fan', 'cyberspace'];
+const text = ['cyb', 'rafael', 'developer', 'dog lover', 'lotr fan'];
 const speed = 120;
 
 let sentence = document.getElementById('sentence');
-let index = sentence.innerHTML.length;
-let indice = 0;
+let writer = 0;
+let eraser = sentence.innerHTML.length;
+let item = 0;
+
 
 function typeWriter() {
-    if (index !== 0) {
-        sentence.innerHTML = sentence.innerHTML.substring(0, index);
-        index--;
+
+    if (writer == text[item].length) {
+        writer = 0;
+        item++
+    }
+    
+    if (writer < text[item].length) {
+        sentence.innerHTML += text[item].charAt(writer);
+        writer++;
+        eraser = sentence.innerHTML.length;
         setTimeout(typeWriter, speed);
-    } else {
-        if (indice < text[0].length) {
-            sentence.innerHTML += text[0].charAt(indice);
-            indice++;
-            setTimeout(typeWriter, speed);
-        }
+    }
+
+    if (eraser == text[item].length) {
+        sentence.innerHTML = sentence.innerHTML.substring(0, eraser - 1);
+        eraser--;
+        setTimeout(typeWriter, speed);
     }
 }
