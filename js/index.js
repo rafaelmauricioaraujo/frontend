@@ -1,19 +1,22 @@
-const text = ['cyb', 'rafael', 'developer', 'dog lover', 'lotr fan'];
-const speed = 120;
-
+const text = ['cyb', 'rafa', 'dev'];
+const speed = 300;
 let sentence = document.getElementById('sentence');
-let writer = 0;
 let eraser = sentence.innerHTML.length;
+let writer = 0;
 let item = 0;
-
 
 function typeWriter() {
 
     if (writer == text[item].length) {
         writer = 0;
-        item++
+        // item++
+        if (item == text.length - 1) {
+            item = 0;
+        } else {
+            item++;
+        }
     }
-    
+
     if (writer < text[item].length) {
         sentence.innerHTML += text[item].charAt(writer);
         writer++;
@@ -22,8 +25,9 @@ function typeWriter() {
     }
 
     if (eraser == text[item].length) {
-        sentence.innerHTML = sentence.innerHTML.substring(0, eraser - 1);
-        eraser--;
+        for (let i = eraser; i > 0; i--) {
+           sentence.innerHTML = sentence.innerHTML.substring(0, i - 1);
+        }
         setTimeout(typeWriter, speed);
     }
 }
