@@ -9,7 +9,8 @@
 }
 
 .main-content {
-    margin: 20% auto;
+    margin: 10% auto;
+
     @media(max-width: 940px) {
         margin: 10% auto;
     }
@@ -20,9 +21,37 @@
     color: $nav-color-hover;
     font-size: 3em;
     text-shadow: -5px 3px 2px $shadow-color;
-    @media(max-width: 940px){
+
+    @media(max-width: 940px) {
         font-size: 2em;
         padding-top: 10%;
+    }
+}
+
+
+#sentence::after {
+    content: "|";
+    color: $shadow-color;
+    margin-left: 0.2em;
+    text-shadow: -1px 1px 1px $shadow-color;
+    animation: blinkCursor 1.2s linear infinite;
+}
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
