@@ -25,14 +25,12 @@
     @media(max-width: 940px) {
         font-size: 2em;
         padding-top: 10%;
-    }
+    }    
 }
-
 
 #sentence::after {
     content: "|";
-    color: $shadow-color;
-    margin-left: 0.2em;
+    color: $shadow-color;    
     text-shadow: -1px 1px 1px $shadow-color;
     animation: blinkCursor 1.2s linear infinite;
 }

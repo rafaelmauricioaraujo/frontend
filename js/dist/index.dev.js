@@ -1,7 +1,7 @@
 "use strict";
 
 var textAnimated = document.getElementById('sentence');
-var text = "";
+var text = null;
 var textArr = ["developer", "dog lover", "LOTR Fan"];
 var currentTextIndex = -1;
 var letterIndex = -1;
@@ -61,35 +61,4 @@ function updateText() {
 } //the initial call to start everything
 
 
-updateText(); // const text = ['cyb', 'rafa', 'dev'];
-// const speed = 300;
-// let sentence = document.getElementById('sentence');
-// let eraser = sentence.innerHTML.length;
-// let writer = 0;
-// let item = 0;
-// function typeWriter() {
-//     if (writer == text[item].length) {
-//         writer = 0;
-//         if (item == text.length - 1) {
-//             item = 0;
-//         } else {
-//             item++;
-//         }
-//     }
-//     if (writer < text[item].length) {
-//         sentence.innerHTML += text[item].charAt(writer);
-//         writer++;
-//         eraser = sentence.innerHTML.length;
-//         // setTimeout(typeWriter, speed);
-//         requestAnimationFrame(typeWriter);
-//     }
-//     // if (eraser == text[item].length) {
-//     //     setTimeout(function() {
-//     //         for (let i = eraser; i > 0; i--) {
-//     //             sentence.innerHTML = sentence.innerHTML.substring(0, i - 1);
-//     //          }
-//     //     }, speed);
-//     //     requestAnimationFrame(typeWriter);
-//     //     // setTimeout(typeWriter, speed);
-//     // }
-// }
+updateText();

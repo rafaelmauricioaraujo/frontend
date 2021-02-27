@@ -173,7 +173,6 @@ body {
 #sentence::after {
   content: "|";
   color: #fe31aa;
-  margin-left: 0.2em;
   text-shadow: -1px 1px 1px #fe31aa;
   animation: blinkCursor 1.2s linear infinite;
 }
