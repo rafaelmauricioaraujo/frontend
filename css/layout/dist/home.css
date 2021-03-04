@@ -191,6 +191,10 @@ body {
     opacity: 0;
   }
 }
+.social-media:hover {
+  transform: rotate(-15deg);
+}
+
 .footer {
   display: flex;
   align-items: center;
